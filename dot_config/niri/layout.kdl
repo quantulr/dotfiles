@@ -1,0 +1,14 @@
+prefer-no-csd  // 不显示窗口默认的标题栏
+
+layout {
+     // 已激活窗口边框 
+	focus-ring {
+		active-gradient from="#33ccffee" to="#00ff99ee" angle=45
+	}
+}
+
+// 边框圆角
+window-rule {
+    geometry-corner-radius 12
+    clip-to-geometry true
+}

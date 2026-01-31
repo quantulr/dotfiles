@@ -1,0 +1,14 @@
+// spawn-at-startup "swaybg" "-i" "/home/ayaya/图片/壁纸/3840x2160.png"
+// Make the wallpaper stationary, rather than moving with workspaces.
+layer-rule {
+    // This is for swaybg; change for other wallpaper tools.
+    // Find the right namespace by running niri msg layers.
+    // match namespace="^wallpaper$"
+    match namespace="^noctalia-overview*"
+    place-within-backdrop true
+}
+
+// Set transparent workspace background color.
+layout {
+    background-color "transparent"
+}

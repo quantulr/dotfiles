@@ -1,0 +1,15 @@
+// noctalia-shell 相关配置
+
+binds {
+   // noctalia 快捷键
+   Mod+S hotkey-overlay-title="设置" { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "settings" "toggle"; }
+   Mod+P hotkey-overlay-title="剪贴板历史" { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "clipboard"; }
+   Mod+A hotkey-overlay-title="通知列表" { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "notifications" "toggleHistory"; }
+   Mod+X hotkey-overlay-title="控制中心" { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "controlCenter" "toggle"; }
+   Mod+Space hotkey-overlay-title="Run an Application: noctalia launcher" { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
+}
+
+debug {
+  // Allows notification actions and window activation from Noctalia.
+  honor-xdg-activation-with-invalid-serial
+}
